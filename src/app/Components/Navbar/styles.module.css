@@ -1,0 +1,49 @@
+.navbar{
+    @apply fixed top-0 w-full flex items-center justify-center h-24 transition-all duration-200 ease-in-out;
+}
+.navbar__logo{
+    @apply absolute left-4 top-1/2 transform -translate-y-1/2 font-bold text-2xl;
+}
+.navbar__list{
+    @apply flex justify-center gap-6 items-center w-full;
+}
+.navbar__items{
+    @apply flex gap-6 items-center text-lg font-bold;
+}
+.navbar__items>li{
+    @apply cursor-pointer;
+}
+.navbar__rest{
+    @apply flex gap-6 text-2xl items-center;
+}
+.navbar__rest>li{
+    @apply cursor-pointer;
+}
+@media screen and (max-width:1300px) {
+    .navbar__list{
+        @apply justify-end pr-10;
+    }
+}
+@media screen and (max-width:1300px) {
+    .navbar{
+        @apply absolute w-screen h-screen bg-white z-10 text-zinc-800 transition-all ease-in-out;
+    }
+    .navbar__logo{
+        @apply left-1/2 -translate-x-1/2 -translate-y-0 top-1/4 text-3xl;
+    }
+    .navbar__items{
+        @apply flex-col;
+    }
+    .navbar__items>li:hover{
+        @apply transition-all duration-300 ease-in-out scale-105;
+    }
+    .navbar__list{
+        @apply flex-col;
+    }
+    .navbar__rest{
+        @apply flex-col;
+    }
+    .navbar__rest>li:hover{
+        @apply transition-all duration-300 ease-in-out scale-110;
+    }
+}
