@@ -27,7 +27,7 @@ export default function Navbar(){
     }, [screenWidth])
     return <nav className={`${styles.navbar} ${showHeader?'left-full':'left-0'}`}>
         <IoMdMenu onClick={()=>handleShowHeader(false)} className={`absolute top-6 -left-16 text-white text-3xl cursor-pointer`}/>
-        <IoMdClose onClick={()=>handleShowHeader(true)} className={`absolute top-6 left-10 text-zinc-700 text-3xl cursor-pointer`}/>
+        <IoMdClose style={{display:screenWidth>1300?'none':'block'}} onClick={()=>handleShowHeader(true)} className={`absolute top-6 left-10 text-zinc-700 text-3xl cursor-pointer`}/>
         <span className={`${styles.navbar__logo}`}>Rapidinez</span>
         <ul className={`${styles.navbar__list}`}>
             <li>
