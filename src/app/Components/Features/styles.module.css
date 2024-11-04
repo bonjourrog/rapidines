@@ -1,8 +1,5 @@
 .features{
-    position: relative;
-    height: 50em;
-    width: 100vw;
-    @apply flex items-center justify-center p-0 border;
+    @apply relative w-full h-[50em] flex items-center justify-center p-0 overflow-hidden;
 }
 .fcontent{
     @apply absolute flex flex-col items-center gap-10;
