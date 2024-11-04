@@ -11,7 +11,7 @@ export const Hero = ()=>{
                 <button className={`${style.hero__button}`}>Contáctanos</button>
             </div>
         </div>
-        <div className={`${style["hero__headline-section--right"]}`}>
+        <div className={`${style["hero__headline-section--right"]}`} data-aos="fade-left">
             <Image className={`${style.hero__image}`} src={"https://res.cloudinary.com/dzqoo2so5/image/upload/v1730311960/rapidines/mka5q9gplazjf0mpwm8q.png"} alt='hero image' layout='fill' objectFit="contain"/>
         </div>
     </main>
