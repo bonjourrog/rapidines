@@ -1,0 +1,54 @@
+.services{
+    @apply flex flex-col items-center justify-center gap-20 w-screen h-screen bg-white;
+}
+.services__healine{
+    @apply w-full text-left font-extrabold text-5xl text-zinc-700 px-40;
+}
+.services__healine > span{
+    @apply text-red-500;
+}
+.services__list{
+    @apply grid grid-cols-3 gap-20 place-items-center w-auto h-auto mx-auto;
+}
+.service{
+    @apply flex flex-col w-80 h-72 overflow-hidden rounded-tl-2xl rounded-tr-2xl;
+}
+.service__header{
+    @apply relative w-full h-2/3 text-white bg-gradient-to-l from-red-300 to-red-500;
+}
+.service__icon{
+    @apply absolute left-6 top-6 text-3xl z-10;
+}
+.service__headline{
+    @apply absolute w-full h-auto bottom-4 text-white transform text-center text-xl font-extrabold z-10;
+}
+.service__caption{
+    @apply text-zinc-500 px-4 py-2;
+}
+@media screen and (max-width:1200px) {
+    .services{
+        @apply h-auto py-20;
+    }
+    .services__list{
+        @apply grid-cols-2;
+    }
+    .services__healine{
+        @apply px-0 pl-20;
+    }
+}
+@media screen and (max-width:800px) {
+    .services__list{
+        @apply grid-cols-1 gap-7;
+    }
+    .services__healine{
+        @apply p-0 w-full text-center;
+    }
+    .service{
+        @apply w-1/2;
+    }
+}
+@media screen and (max-width:800px) {
+    .service{
+        @apply w-3/4;
+    }
+}
