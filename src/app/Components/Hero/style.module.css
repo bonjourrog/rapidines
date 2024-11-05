@@ -8,7 +8,7 @@
     @apply relative flex items-end w-1/3 h-full;
 }
 .hero__headline{
-    @apply text-8xl font-extrabold;
+    @apply text-7xl font-extrabold;
 }
 .hero__caption{
     @apply w-[25em];
@@ -27,20 +27,12 @@
         @apply relative w-3/5;
     }
 }
-@media screen and (max-width:1400px) {
-    .hero__headline{
-        @apply text-7xl;
-    }
-    .hero__headline-section{
-        @apply w-1/2;
-    }
-    .hero__headline-section--right{
-        @apply relative  w-1/2;
-    }
-}
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1200px) {
     .hero{
         @apply flex-col items-center justify-center gap-4 text-center h-screen;
+    }
+    .hero__headline{
+        @apply text-7xl;
     }
     .hero__headline-section{
         @apply h-auto w-full;
