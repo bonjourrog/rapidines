@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import Services from "./Components/Services";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Howitworks from "./Components/HIW";
 
 export default function Home() {
   useEffect(()=>{
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero/>
       <Features/>
       <Services/>
+      <Howitworks/>
     </div>
   );
 }
