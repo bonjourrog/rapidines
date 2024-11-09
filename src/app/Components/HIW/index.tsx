@@ -22,7 +22,7 @@ export default function Howitworks(){
                     <button className={styles["contact-btn"]}>Contacto</button>
                 </div>
             </li>
-            <li className={styles.step}>
+            <li className={`${styles.step} ${styles["step--reverse"]}`}>
                 <div className={styles["step__text-container"]} data-aos="fade-right">
                     <div className={styles.step__header}>
                         <RiListCheck3 className={styles.step__icon}/>
