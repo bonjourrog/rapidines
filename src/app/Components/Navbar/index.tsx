@@ -9,14 +9,23 @@ import { IoMdClose } from "react-icons/io";
 export default function Navbar(){
     const [showHeader, handleShowHeader] = useState<boolean>(false)
     const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth)
+    const [scroll, setScroll] = useState<number>(window.scrollY);
 
     const handleScreenWith = ()=>{
         setScreenWidth(window.innerWidth)
     }
 
+    const handleScroll = ()=>{
+        setScroll(window.scrollY)
+    }
+
     useEffect(()=>{
         window.addEventListener('resize', handleScreenWith)
-        return ()=>window.removeEventListener('resize', handleScreenWith)
+        window.addEventListener('scroll', handleScroll)
+        return ()=>{
+            window.removeEventListener('resize', handleScreenWith)
+            window.removeEventListener('scroll', handleScroll)
+        }
     }, [])
     useEffect(()=>{
         if(screenWidth<1300){
@@ -25,7 +34,7 @@ export default function Navbar(){
             handleShowHeader(false)
         }
     }, [screenWidth])
-    return <nav className={`${styles.navbar} ${showHeader?'left-full':'left-0'}`}>
+    return <nav className={`${styles.navbar} ${showHeader?'left-full':'left-0'} ${scroll>100?'bg-gradient-to-r from-red-500 via-red-400 to-red-400 text-white z-20 shadow-lg':''} `}>
         <IoMdMenu onClick={()=>handleShowHeader(false)} className={`absolute top-6 -left-16 text-white text-3xl cursor-pointer`}/>
         <IoMdClose style={{display:screenWidth>1300?'none':'block'}} onClick={()=>handleShowHeader(true)} className={`absolute top-6 left-10 text-zinc-700 text-3xl cursor-pointer`}/>
         <span className={`${styles.navbar__logo}`}>Rapidinez</span>
