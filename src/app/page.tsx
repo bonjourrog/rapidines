@@ -7,6 +7,7 @@ import Services from "./Components/Services";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Howitworks from "./Components/HIW";
+import { Benefits } from "./Components/Benefits";
 
 export default function Home() {
   useEffect(()=>{
@@ -21,6 +22,7 @@ export default function Home() {
       <Features/>
       <Services/>
       <Howitworks/>
+      <Benefits/>
     </div>
   );
 }

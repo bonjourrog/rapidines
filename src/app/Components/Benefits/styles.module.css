@@ -1,0 +1,59 @@
+.benefits{
+    @apply relative flex h-screen w-screen overflow-hidden;
+}
+.benefits__leftside{
+    @apply w-2/3 h-full flex items-center justify-center;
+}
+.benefits__text{
+    @apply flex flex-col justify-center items-start gap-10 w-[45em] h-full z-10;
+}
+.benefits__headline{
+    @apply text-6xl font-extrabold;
+}
+.benefits__list{
+    @apply flex flex-col gap-6;
+}
+.benefit__headline{
+    @apply font-bold text-xl;
+}
+.benefit__description{
+    @apply py-4 pl-10 w-96;
+}
+.decoration{
+    @apply absolute -right-6 -top-6 w-[25em] h-[25em];
+}
+@media screen and (max-width:1200px){
+    .benefits__leftside{
+        @apply w-1/2;
+    }
+    .benefits__headline{
+        @apply w-full pl-10;
+    }
+    .benefits__text{
+        @apply w-1/2 items-center;
+    }
+}
+@media screen and (max-width:900px){
+    .benefits{
+        @apply flex-col justify-center items-center h-auto py-20;
+    }
+}
+@media screen and (max-width:700px){
+    .benefits__leftside{
+        @apply w-full;
+    }
+    .benefits__headline{
+        @apply w-full p-0;
+    }
+    .benefits__text{
+        @apply text-center w-full;
+    }
+    .benefit__description{
+        @apply p-0 py-2 w-96;
+    }
+}
+@media screen and (max-width:450px){
+    .benefit__description{
+        @apply p-0 py-2 w-full px-6;
+    }
+}
