@@ -1,0 +1,77 @@
+.contact{
+    @apply flex justify-center h-screen w-full bg-white text-zinc-700;
+}
+.contact__leftside{
+    @apply w-2/5 h-full flex flex-col justify-center gap-10;
+}
+.contact__headline{
+    @apply text-6xl font-bold;
+}
+.contact__text{
+    @apply flex items-center justify-start gap-6;
+}
+.contact__icon{
+    @apply text-8xl text-red-500;
+}
+.contact__information{
+    @apply flex justify-between w-3/4 items-start;
+}
+.item{
+    @apply flex flex-col items-center justify-center;
+}
+.item__icon{
+    @apply text-red-500 text-xl;
+}
+.contact__rightside{
+    @apply flex items-center justify-end rounded-lg;
+}
+.contact__rightside-image{
+    @apply relative w-[40em] h-[40em];
+}
+.contact__btn{
+    @apply flex items-center gap-2 border-2 border-red-400 text-red-400 font-bold px-2 py-1 rounded-full;
+}
+.contact__btn:hover{
+    @apply bg-red-400 text-white;
+}
+@media screen and (max-width:1200px){
+    .contact{
+        @apply gap-4;
+    }
+    .contact__rightside-image{
+        @apply w-[30em] h-[30em];
+    }
+}
+@media screen and (max-width:1200px){
+    .contact{
+        @apply flex-col-reverse items-center h-auto py-20 gap-10;
+    }
+    .contact__leftside{
+        @apply w-full items-center;
+    }
+    .contact__text{
+        @apply w-[25em];
+    }
+    .contact__information{
+        @apply w-[25em];
+    }
+}
+@media screen and (max-width:550px){
+    .contact__rightside-image{
+        @apply hidden;
+    }
+}
+@media screen and (max-width:440px){
+    .contact{
+        @apply px-4;
+    }
+    .contact__text{
+        @apply flex-col w-full;
+    }
+    .contact__headline{
+        @apply text-4xl;
+    }
+    .contact__icon{
+        @apply text-5xl;
+    }
+}
