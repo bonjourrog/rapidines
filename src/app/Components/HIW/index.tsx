@@ -4,7 +4,9 @@ import {Poppins} from 'next/font/google';
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { RiListCheck3 } from "react-icons/ri";
 import { MdOutlineDeliveryDining } from "react-icons/md";
+import { BiSolidMessageSquareDots } from "react-icons/bi";
 const poppins = Poppins({weight:'900', subsets:['latin']})
+
 export default function Howitworks(){
     return <div className={styles.hiw}>
         <h2 className={`${styles.hiw__headline} ${poppins.className}`}>¿Cómo <span className="text-red-400">funciona?</span></h2>
@@ -19,7 +21,10 @@ export default function Howitworks(){
                         <h3 className={`${styles.step__headline} ${poppins.className}`}>CONTACTÁNOS</h3>
                     </div>
                     <p className={styles.step__caption}>Empieza por explorar la variedad de servicios que ofrecemos para repartidores. Cuando estés listo para hacer tu pedido, contáctanos a través de los números que proporcionamos</p>
-                    <button className={styles["contact-btn"]}>Contacto</button>
+                    <button className={styles["contact-btn"]}>
+                        <a href="https://wa.me/526383805280?text=Hola. estoy interesado en su servicio." target='_blank'>Contacto</a>
+                        <BiSolidMessageSquareDots/>
+                    </button>
                 </div>
             </li>
             <li className={`${styles.step} ${styles["step--reverse"]}`}>
