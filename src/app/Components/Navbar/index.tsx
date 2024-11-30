@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { IoMdMenu } from "react-icons/io";
 const fuzzy_Bubbles = Fuzzy_Bubbles({weight:"700", subsets:["latin"]})
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-scroll';
 
 export default function Navbar(){
     const [showHeader, handleShowHeader] = useState<boolean>(false)
@@ -34,15 +35,15 @@ export default function Navbar(){
             handleShowHeader(false)
         }
     }, [screenWidth])
-    return <nav className={`${styles.navbar} ${scroll>100&&screenWidth>1300?'bg-gradient-to-r from-red-500 via-red-400 to-red-400 text-white z-20 shadow-lg':''} ${showHeader?'left-full bg-white':'left-0'}`}>
+    return <nav className={`z-40 ${styles.navbar} ${scroll>100&&screenWidth>1300?'bg-gradient-to-r from-red-500 via-red-400 to-red-400 text-white z-20 shadow-lg':''} ${showHeader?'left-full bg-white':'left-0'}`}>
         <IoMdMenu onClick={()=>handleShowHeader(false)} className={`absolute top-6 -left-16 text-3xl cursor-pointer ${scroll>window.innerHeight?'text-red-400':'text-white'}`}/>
         <IoMdClose style={{display:screenWidth>1300?'none':'block'}} onClick={()=>handleShowHeader(true)} className={`absolute top-6 left-10 text-zinc-700 text-3xl cursor-pointer`}/>
         <span className={`${styles.navbar__logo}`}>Rapidinez</span>
         <ul className={`${styles.navbar__list}`}>
             <li>
                 <ul className={`${styles.navbar__items}`}>
-                    <li>Servicios</li>
-                    <li>Como funciona</li>
+                    <li><Link to='services' smooth={true} spy={true}>Servicios</Link></li>
+                    <li><Link to='hiw' smooth={true} spy={true}>Como funciona</Link></li>
                 </ul>
             </li>
             <li>
@@ -54,8 +55,8 @@ export default function Navbar(){
             </li>
             <li>
                 <ul className={`${styles.navbar__items}`}>
-                    <li>Beneficios</li>
-                    <li>Contacto</li>
+                    <li><Link to='benefits' smooth={true} spy={true}>Beneficios</Link></li>
+                    <li><Link to='contact' smooth={true} spy={true}>Contacto</Link></li>
                 </ul>
             </li>
         </ul>

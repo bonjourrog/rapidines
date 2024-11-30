@@ -10,7 +10,7 @@ import {Poppins} from 'next/font/google'
 const poppins = Poppins({subsets:['latin'], weight:'900'})
 export default function Services(){
     return (
-        <section className={styles.services}>
+        <section id='services' className={styles.services}>
             <h2 className={`${styles.services__healine} ${poppins.className}`}>SERVI<span>CIOS</span></h2>
             <ul className={styles.services__list}>
                 <li className={styles.service} data-aos="zoom-in-up">

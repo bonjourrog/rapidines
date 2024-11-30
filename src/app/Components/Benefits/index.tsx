@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 
 export function Benefits(){
-    return <section className={styles.benefits}>
+    return <section id='benefits' className={styles.benefits}>
         <Image src="https://res.cloudinary.com/dzqoo2so5/image/upload/v1731346105/rapidines/vnwypd4k9u7kzo45nwkl.png" alt='benefits background image' layout='fill' objectFit='cover'/>
         <section className={styles.benefits__leftside}>
             <div className='relative w-[35em] h-[35em] z-20'>

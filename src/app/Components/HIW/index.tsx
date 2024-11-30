@@ -8,7 +8,7 @@ import { BiSolidMessageSquareDots } from "react-icons/bi";
 const poppins = Poppins({weight:'900', subsets:['latin']})
 
 export default function Howitworks(){
-    return <div className={styles.hiw}>
+    return <div id='hiw' className={styles.hiw}>
         <h2 className={`${styles.hiw__headline} ${poppins.className}`}>¿Cómo <span className="text-red-400">funciona?</span></h2>
         <ul>
             <li className={styles.step}>

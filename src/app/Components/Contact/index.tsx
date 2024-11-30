@@ -9,7 +9,7 @@ import { HiCursorClick } from "react-icons/hi";
 const poppins = Poppins({weight:'500', subsets:['latin']})
 
 const Contact: React.FC<ContactProps> = ()=>{
-    return <section className={`${styles.contact} ${poppins.className}`}>
+    return <section id='contact' className={`${styles.contact} ${poppins.className}`}>
         <div className={styles.contact__leftside}>
             <h2 className={styles.contact__headline}>Contá<span className='text-red-500'>ctanos</span></h2>
             <div className={styles.contact__text}>
