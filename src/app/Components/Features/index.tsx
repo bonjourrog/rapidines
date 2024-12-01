@@ -8,13 +8,18 @@ export default function Features(){
             <h2 className={`${styles.features__headline}`}>Patroci<span className="text-red-500">nadores</span></h2>
             <ul className={`${styles.restaurants}`}>
                 <li className={`${styles.restaurant} ${styles["restaurant--burger"]}`}>
-                    <Image src='https://res.cloudinary.com/dzqoo2so5/image/upload/v1730419317/rapidines/dejpc10mlu4hmwabdt4q.png' alt='la fat burger logo' layout="fill" objectFit="contain"/>
+                    <a href="https://lafatburger.com" target="_blank" rel="noopener noreferrer">
+                        <Image src='https://res.cloudinary.com/dzqoo2so5/image/upload/v1730419317/rapidines/dejpc10mlu4hmwabdt4q.png' alt='la fat burger logo' layout="fill" objectFit="contain"/></a>
                 </li>
                 <li className={`${styles.restaurant} ${styles["restaurant--birria"]}`}>
-                    <Image src='https://res.cloudinary.com/dzqoo2so5/image/upload/v1730420111/rapidines/pl8qlpcg3vzfnuveoqfk.png' alt='Birria el estacionamiento logo' layout="fill" objectFit="contain"/>
+                    <a href="https://www.facebook.com/profile.php?id=61565797590287" target="_blank" rel="noopener noreferrer">
+                        <Image src='https://res.cloudinary.com/dzqoo2so5/image/upload/v1730420111/rapidines/pl8qlpcg3vzfnuveoqfk.png' alt='Birria el estacionamiento logo' layout="fill" objectFit="contain"/>
+                    </a>
                 </li>
                 <li className={`${styles.restaurant} ${styles["restaurant--comedero"]}`}>
-                    <Image src='https://res.cloudinary.com/dzqoo2so5/image/upload/v1730420299/rapidines/jumtb8yacgrqixrrhkdk.png' alt='El comedero logo' layout="fill" objectFit="contain"/>
+                    <a href="https://elcomedero.com.mx" target="_blank" rel="noopener noreferrer">
+                        <Image src='https://res.cloudinary.com/dzqoo2so5/image/upload/v1730420299/rapidines/jumtb8yacgrqixrrhkdk.png' alt='El comedero logo' layout="fill" objectFit="contain"/>
+                    </a>
                 </li>
             </ul>
         </div>
