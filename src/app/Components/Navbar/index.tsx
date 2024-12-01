@@ -48,9 +48,9 @@ export default function Navbar(){
             </li>
             <li>
                 <ul className={`${styles.navbar__rest} ${fuzzy_Bubbles.className}`}>
-                    <li>El comedero</li>
-                    <li>La fat burger</li>
-                    <li>Birria</li>
+                    <li><a href="https://elcomedero.com.mx" target="_blank" rel="noopener noreferrer">El comedero</a></li>
+                    <li><a href="https://lafatburger.com" target="_blank" rel="noopener noreferrer">La fat burger</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61565797590287" target="_blank" rel="noopener noreferrer">Birria</a></li>
                 </ul>
             </li>
             <li>
