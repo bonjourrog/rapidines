@@ -60,6 +60,9 @@
     .contact__rightside-image{
         @apply hidden;
     }
+    .contact__information{
+        @apply flex-col-reverse items-center gap-10;
+    }
 }
 @media screen and (max-width:440px){
     .contact{
