@@ -42,8 +42,8 @@ export default function Navbar(){
         <ul className={`${styles.navbar__list}`}>
             <li>
                 <ul className={`${styles.navbar__items}`}>
-                    <li><Link to='services' smooth={true} spy={true}>Servicios</Link></li>
-                    <li><Link to='hiw' smooth={true} spy={true}>Como funciona</Link></li>
+                    <li><Link onClick={()=>handleShowHeader(true)} to='services' smooth={true} spy={true}>Servicios</Link></li>
+                    <li><Link onClick={()=>handleShowHeader(true)} to='hiw' smooth={true} spy={true}>Como funciona</Link></li>
                 </ul>
             </li>
             <li>
@@ -55,8 +55,8 @@ export default function Navbar(){
             </li>
             <li>
                 <ul className={`${styles.navbar__items}`}>
-                    <li><Link to='benefits' smooth={true} spy={true}>Beneficios</Link></li>
-                    <li><Link to='contact' smooth={true} spy={true}>Contacto</Link></li>
+                    <li><Link onClick={()=>handleShowHeader(true)} to='benefits' smooth={true} spy={true}>Beneficios</Link></li>
+                    <li><Link onClick={()=>handleShowHeader(true)} to='contact' smooth={true} spy={true}>Contacto</Link></li>
                 </ul>
             </li>
         </ul>
